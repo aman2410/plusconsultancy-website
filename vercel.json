@@ -1,6 +1,0 @@
-{
-  "buildCommand": "npm run build",
-  "env": {
-    "SERVER_PRESET": "vercel"
-  }
-}
