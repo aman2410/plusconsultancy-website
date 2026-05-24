@@ -1,0 +1,13 @@
+# Plus Consultancy
+
+> India's premium recruitment and talent acquisition partner — helping companies hire faster, smarter, and with higher-quality talent.
+
+## Pages
+- [Home](/): Premium recruitment partner overview
+- [About](/about): Company mission, vision and values
+- [Services](/services): Permanent, leadership, bulk, RPO, startup and IT recruitment
+- [Industries](/industries): IT, BFSI, Manufacturing, SaaS, Telecom, Healthcare, Startups, E-commerce
+- [Employers](/employers): Submit hiring requirements
+- [Careers](/careers): Open roles and resume submission
+- [Contact](/contact): Get in touch
+- [FAQ](/faq): Common questions
