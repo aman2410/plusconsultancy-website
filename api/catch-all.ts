@@ -12,6 +12,7 @@ async function getServerHandler() {
     // Import the compiled TanStack Start server
     // In Vercel, this path resolves to the dist folder in the deployment
     console.log("[API] Loading server from dist/server/server.js");
+    // @ts-ignore - Dynamic import of generated server file
     const serverModule = await import("../dist/server/server.js");
     
     console.log("[API] Server module imported, keys:", Object.keys(serverModule));
@@ -80,7 +81,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.status(response.status);
 
     // Set response headers
-    response.headers.forEach((value, key) => {
+    response.headers.forEach((value: string, key: string) => {
       res.setHeader(key, value);
     });
 
