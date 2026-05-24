@@ -6,7 +6,15 @@
   },
   "rewrites": [
     {
-      "source": "/:path*",
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/(.*)",
       "destination": "/api/index"
     }
   ]
