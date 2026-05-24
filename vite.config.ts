@@ -6,6 +6,7 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// Set Vercel preset when building on Vercel
 if (process.env.VERCEL) {
   process.env.SERVER_PRESET = "vercel";
 }
@@ -15,6 +16,8 @@ if (process.env.VERCEL) {
 export default defineConfig({
   cloudflare: false,
   tanstackStart: {
+    // For Vercel: use default preset which will handle Vercel serverless functions
+    // For local dev/other: explicitly specify server entry point
     ...(process.env.VERCEL ? {} : { server: { entry: "server" } }),
   },
 });
