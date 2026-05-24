@@ -1,5 +1,3 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
-
 // Cache the server fetch handler
 let serverHandler: any = null;
 let loadError: Error | null = null;
@@ -40,7 +38,7 @@ async function getServerHandler() {
   }
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: any, res: any) {
   try {
     console.log(`[API] ${req.method} ${req.url}`);
     
